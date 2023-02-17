@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Card Rotação - Práticas da @code55.io </title>
+
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #06152A;
+            margin: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 11%;
+        }
+
+        .rotary__card {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .rotary__card-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .rotary__card:hover .rotary__card-content {
+            transform: rotateY(180deg);
+        }
+
+        .rotary__card-content--front,
+        .rotary__card-content--back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            /* Safari */
+            backface-visibility: hidden;
+            border-radius: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .rotary__card-content--front {
+            background: transparent linear-gradient(270deg,#09B734 0%,#01E840 100%) 0% 0% no-repeat padding-box;
+        }
+
+        .rotary__card-content--back {
+            background: transparent linear-gradient(270deg,#01E840 0%,#09B734 100%) 0% 0% no-repeat padding-box;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .rotary__card-content--back h1,
+        .rotary__card-content--back p {
+            margin: 0;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .rotary__card-content--back h1 {
+            font-size: 1.7rem;
+        }
+
+        .logo {
+            filter: drop-shadow(2px 2px 5px black);
+            opacity: .7;
+        }
+
+        a {
+            color: #fff;
+        }
+        a:hover {
+            color: #06152A;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="rotary__card">
+    <div class="rotary__card-content">
+        <!-- Front content -->
+        <div class="rotary__card-content--front">
+            <!-- Logo / image that goes on the front -->
+            <img src=".\components\code55.png" alt="Logo Code55" class="logo">
+        </div>
+        <!-- Back content -->
+        <div class="rotary__card-content--back">
+            <!-- Back image/logo -->
+            <img src=".\components\code55.png" alt="Logo Code55" class="logo">
+            <!-- Tittle -->
+            <h1>💻🌍</h1>
+            <!-- Phrase -->
+            <p> Acompanhe a Code no instagram </p>
+            <!-- Link -->
+            <p>
+                <a href="https://www.instagram.com/code55.io/" target="_blank">@code55.io</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+</html>
