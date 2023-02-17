@@ -6,7 +6,7 @@ This repository contains the HTML and CSS code for a rotating card created only 
 
 The main folder of the repository is "rotary-card", where the HTML file for the card is located. There is also a folder called "components" where the logo used in the card is located.
 
-# Folder structure
+### Folder structure
 The repository is structured as follows:
 
 rotary-card/<br>
@@ -23,12 +23,12 @@ rotary-card/<br>
 
 ## [PT-BR]
 
-## Descrição
+# Descrição
 Este repositório contém o código HTML e CSS para um card rotatório criado apenas com essas duas linguagens. O card é animado e pode ser utilizado em diversos tipos de projetos, como sites e blogs.
 
 A pasta principal do repositório é a "rotary-card", onde se encontra o arquivo HTML do card. Há também uma pasta chamada "components" onde se encontra o logo utilizado no card.
 
-# Estrutura de pastas
+### Estrutura de pastas
 
 O repositório está estruturado da seguinte forma:
 
